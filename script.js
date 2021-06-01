@@ -20,7 +20,7 @@ function writePassword(
 // build the avaiable characters string.
 var availableChars = ""
 if (includeUpperCase) {
-  availableChars += uppercase // this is exactly equal to availableChars = availableChars + uppercase
+  availableChars += uppercase //  availableChars = availableChars + uppercase
 }
 if (includeLowerCase) {
   availableChars += lowercase 
@@ -32,7 +32,7 @@ if (includeSymbols) {
   availableChars += symbols
 }
 for (let i = 0; i < characterAmount; i++) {
- 
+ password += availableChars[Math.floor(Math.random() * availableChars.length)]
   
 }
 
@@ -41,10 +41,7 @@ for (let i = 0; i < characterAmount; i++) {
 
 // console.log(hasLower,hasUpper, hasSymbols, hasNumbers);
 // loop over the string characterAmount times
-for (let i = 0; i < characterAmount.length; i++) {
-  const element = characterAmount[i];
-  CDATASection
-}
+
   passwordText.value = password;
 
 }
